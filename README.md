@@ -81,6 +81,22 @@ The same tab holds the team list (**IMPORT TEAMS…** merges names from a file
 into `teams.json`), the post-match recording delay, and a switch between the
 dark **Midnight** theme and the light **Daylight** theme.
 
+### Typical use: two cameras and a stitcher
+
+The author uses the app with two DJI Osmo Action 4 cameras mounted side by
+side, whose footage is stitched into one wide picture with the open-source
+[Reco video stitcher](https://github.com/reco-project/video-stitcher). The
+operator starts recording a few minutes before kick-off; the app logs
+`video_start` as soon as the cameras confirm it, and the match file is put in
+the match folder next to the footage.
+
+The stitcher can then read the match file to drive a scoreboard overlay, skip
+stoppages and cut goal highlights. The scoreboard comes from Reco itself. The
+cut and skip functions are in the author's own modified build of Reco, not in
+upstream, so with a stock Reco you get the log and the scoreboard, but not the
+automatic cuts. The match file is plain JSON, so any other tool can read it
+too.
+
 ## Features
 
 - Match log: score, cards, periods, added time and notes, each with a
