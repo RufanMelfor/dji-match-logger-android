@@ -91,7 +91,10 @@ operator starts recording a few minutes before kick-off; the app logs
 the match folder next to the footage.
 
 The stitcher can then read the match file to drive a scoreboard overlay, skip
-stoppages and cut goal highlights. This is not stock Reco: the scoreboard
+stoppages and cut goal highlights. It lines the log up with the footage by
+treating `video_start` as the first frame, and uses the kick-off, pause,
+resume and full-time events to work out which stretches to cut, with a
+configurable margin around each. This is not stock Reco: the scoreboard
 system comes from an [open pull request](https://github.com/reco-project/video-stitcher/pull/474)
 by Bjorn Zelter that is not merged yet, and the author's own build adds
 reading of the match file, the automatic cuts and the goal highlights on top
