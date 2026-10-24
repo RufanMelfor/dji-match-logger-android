@@ -1,0 +1,8 @@
+<resources>
+    <!--
+        Compose (Material3) drives all in-app theming; this XML theme only
+        configures the system window (no action bar) before the first Compose
+        frame renders.
+    -->
+    <style name="Theme.DJIMatchLogger" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

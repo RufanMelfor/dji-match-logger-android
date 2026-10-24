@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Stylized Lens / Ball Outer Glow (Subtle) -->
+    <path
+        android:pathData="M54,54m-32,0a32,32 0,1 1,64 0a32,32 0,1 1,-64 0"
+        android:fillAlpha="0.1"
+        android:fillColor="#3B82F6"/>
+
+    <!-- Main Outer Ring (White Lens Edge) -->
+    <path
+        android:pathData="M54,28C39.6,28 28,39.6 28,54s11.6,26 26,26s26,-11.6 26,-26S68.4,28 54,28zM54,74c-11,0 -20,-9 -20,-20s9,-20 20,-20s20,9 20,20S65,74 54,74z"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Inner Soccer Hexagon Pattern -->
+    <path
+        android:pathData="M54,38l-7,5l2,8h10l2,-8z"
+        android:fillColor="#3B82F6"/>
+
+    <path
+        android:pathData="M47,43l-8,2l-3,10l6,5l5,-2z"
+        android:fillAlpha="0.5"
+        android:fillColor="#3B82F6"/>
+
+    <path
+        android:pathData="M61,43l8,2l3,10l-6,5l-5,-2z"
+        android:fillAlpha="0.5"
+        android:fillColor="#3B82F6"/>
+
+    <!-- Bright Recording Dot -->
+    <path
+        android:pathData="M76,34m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#EF4444"/>
+
+</vector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    What the FileProvider is allowed to hand out.
+
+    Only the app's own external files directory, which is where teams.json and
+    the match files live. Sharing works by granting a one-off read permission
+    on a content:// URI rather than by handing over a file:// path, which
+    Android has refused to accept since API 24.
+-->
+<paths>
+    <external-files-path
+        name="app_files"
+        path="." />
+    <external-path
+        name="external_storage"
+        path="." />
+    <root-path
+        name="root"
+        path="." />
+</paths>

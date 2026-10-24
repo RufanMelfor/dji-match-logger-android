@@ -1,0 +1,201 @@
+<resources>
+    <!-- All user-facing text lives here and is written in English. -->
+    <string name="app_name">DJI Match Logger</string>
+    <string name="scan_title">Cameras</string>
+    <string name="scan_start">Scan</string>
+    <string name="scan_stop">Stop</string>
+    <string name="scan_searching">Searching…</string>
+    <string name="scan_empty">No cameras found yet.</string>
+    <string name="scan_idle">Start a scan to look for cameras.</string>
+
+    <!-- Falls back to this when a camera advertises no local name. -->
+    <string name="camera_unnamed">DJI Camera</string>
+    <!-- Device id as four hex digits, then signal strength. -->
+    <string name="camera_details">ID %1$s · %2$d dBm</string>
+
+    <string name="blocker_permission">Scanning needs permission.</string>
+    <string name="blocker_permission_action">Grant</string>
+    <string name="blocker_bluetooth">Bluetooth is off.</string>
+    <string name="blocker_location">Location services are off. This Android version cannot scan for Bluetooth devices without them.</string>
+    <string name="blocker_recheck">Check again</string>
+    <string name="scan_failed">Scan failed (error %1$d).</string>
+
+    <string name="link_disconnected">Not connected</string>
+    <string name="link_connecting">Connecting…</string>
+    <string name="link_discovering">Discovering services…</string>
+    <string name="link_enabling">Enabling notifications…</string>
+    <string name="link_handshaking">Pairing — confirm on the camera if it asks</string>
+    <string name="link_ready">Connected</string>
+    <string name="link_failed">Failed: %1$s</string>
+    <!-- Frames pushed by the camera since the link came up. -->
+    <string name="link_frames">%1$d frames</string>
+
+    <string name="record_start">Record</string>
+    <string name="record_stop">Stop recording</string>
+    <string name="recording">RECORDING</string>
+    <string name="not_recording">Idle</string>
+    <!-- Shown while no status push has arrived yet. -->
+    <string name="status_unknown">Status unknown</string>
+    <string name="cameras_ready">%1$d ready</string>
+
+    <!-- Battery, then space left expressed as recording minutes. -->
+    <string name="camera_battery">Battery %1$d%%</string>
+    <string name="camera_remaining">%1$d min left</string>
+    <string name="camera_record_time">Recording %1$d:%2$02d</string>
+    <string name="camera_no_card">No card</string>
+    <string name="camera_asleep">ASLEEP — waking</string>
+    <string name="camera_temp_warning">Camera is warm</string>
+    <string name="camera_temp_too_hot">Too hot to record</string>
+    <string name="camera_temp_shutdown">Overheating — will shut down</string>
+
+    <string name="details_show">All parameters</string>
+    <string name="details_hide">Hide parameters</string>
+    <string name="detail_mode">Mode</string>
+    <string name="detail_status">Status</string>
+    <string name="detail_resolution">Resolution</string>
+    <string name="detail_fps">Frame rate</string>
+    <string name="detail_eis">Stabilisation</string>
+    <string name="detail_record_time">Recorded</string>
+    <string name="detail_capacity">Card free</string>
+    <string name="detail_remaining">Recording left</string>
+    <string name="detail_photos">Photos left</string>
+    <string name="detail_power">Power mode</string>
+    <string name="detail_temperature">Temperature</string>
+    <string name="detail_battery">Battery</string>
+    <string name="detail_user_mode">User mode</string>
+    <string name="detail_frames">Pushes received</string>
+    <string name="detail_rejected">Frames rejected</string>
+
+    <!-- ===== Match log ===== -->
+    <string name="tab_match">Match</string>
+    <string name="tab_config">Config</string>
+
+    <!-- Used until the operator fills in real team names. -->
+    <string name="match_home_default">Home</string>
+    <string name="match_away_default">Away</string>
+
+    <string name="match_period">Period %1$d of %2$d</string>
+    <string name="match_not_started">Not started</string>
+    <string name="match_full_time">Full time</string>
+    <string name="match_paused">PAUSED</string>
+
+    <string name="match_kick_off">Kick off</string>
+    <string name="match_pause">Pause</string>
+    <string name="match_resume">Resume</string>
+    <string name="match_end">End match</string>
+    <string name="match_undo">Undo</string>
+    <string name="match_added_time_more">+1</string>
+    <string name="match_added_time_less">−1</string>
+    <string name="match_note">Note</string>
+    <string name="match_note_hint">What happened?</string>
+    <string name="match_new">New match</string>
+    <string name="match_new_confirm">Discard this match and start a new one? The event log cannot be recovered.</string>
+    <string name="match_new_confirm_action">Discard</string>
+    <string name="match_end_confirm">End the match? This will stop the game clock.</string>
+
+    <string name="match_log_empty">Nothing logged yet.</string>
+    <string name="match_undone">Undone: %1$s</string>
+
+    <string name="event_video_start">Recording started</string>
+    <string name="event_period_start">Period %1$d started</string>
+    <string name="event_match_end">Full time</string>
+    <string name="event_goal">Goal</string>
+    <string name="event_yellow">Yellow card</string>
+    <string name="event_red">Red card</string>
+    <string name="event_added_time">Added time +%1$d</string>
+    <string name="event_pause_start">Paused</string>
+    <string name="event_pause_end">Resumed</string>
+    <string name="event_note">Note</string>
+    <!-- An event description followed by the team it belongs to. -->
+    <string name="event_with_team">%1$s · %2$s</string>
+    <!-- Marks a recording start the cameras never confirmed. -->
+    <string name="event_unconfirmed">unconfirmed</string>
+
+    <string name="match_setup_home">Home team</string>
+    <string name="match_setup_away">Away team</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit">Edit</string>
+
+    <!-- Labels above the two match clocks. -->
+
+    <string name="action_fullscreen">Full screen</string>
+    <string name="action_exit_fullscreen">Exit full screen</string>
+
+    <!-- ===== Match screen ===== -->
+    <string name="panel_start_periods">Start / periods</string>
+    <string name="panel_goal">Goal</string>
+    <string name="panel_added_time">Added time (current period)</string>
+    <string name="panel_cards">Cards</string>
+    <string name="panel_cameras">Cameras</string>
+    <string name="panel_controls">Controls</string>
+    <string name="panel_log">Log</string>
+
+    <string name="match_goal_home">GOAL Home</string>
+    <string name="match_goal_away">GOAL Away</string>
+    <string name="card_yellow_home">Yellow Home</string>
+    <string name="card_yellow_away">Yellow Away</string>
+    <string name="card_red_home">Red Home</string>
+    <string name="card_red_away">Red Away</string>
+    <!-- Period button: which period, and how many there are. -->
+    <string name="match_next_period_of">Next period (%1$d / %2$d)</string>
+    <!-- The period clock, beside the match clock. -->
+    <string name="clock_period_value">P %1$s</string>
+    <!-- Added time, as read out in the panel. -->
+    <string name="added_time_minutes">%1$d min</string>
+
+    <string name="controls_add_note">Add note</string>
+
+    <string name="cam_left">CAM LEFT</string>
+    <string name="cam_right">CAM RIGHT</string>
+    <string name="cam_connected">Connected</string>
+    <string name="cam_not_connected">Not connected</string>
+    <string name="cam_status">%1$s: %2$s</string>
+    <string name="cam_rec">REC</string>
+    <string name="cam_recording">Recording</string>
+    <string name="video_start">Start video</string>
+    <!-- Counting down to the automatic stop after the final whistle. -->
+    <string name="video_stopping_in">Stopping in %1$d s</string>
+    <string name="video_stop">Stop video</string>
+    <string name="video_stop_confirm">Stop recording on all cameras?</string>
+
+    <string name="setup_title">Before kickoff</string>
+    <string name="setup_periods">Number of periods</string>
+    <string name="setup_track_cards">Track yellow/red cards</string>
+    <string name="action_ok">OK</string>
+
+    <!-- ===== Configuration page ===== -->
+    <string name="config_title">Configuration</string>
+    <string name="config_connect">Connect</string>
+    <string name="config_disconnect">Disconnect</string>
+    <string name="config_no_camera">Not found in the last scan.</string>
+    <string name="config_swap_sides">Swap sides</string>
+    <string name="config_swap_hint">Both cameras report the same model, so the side is remembered per camera.</string>
+    <string name="config_format">Resolution / fps</string>
+    <string name="config_recorded">Recording time</string>
+    <string name="config_temperature">Temperature</string>
+    <string name="config_card_free">Card free</string>
+    <string name="config_battery">Battery</string>
+    <string name="config_blocked">Cannot scan</string>
+    <string name="config_match_files">Match file</string>
+    <string name="config_no_match_file">Nothing saved yet — a file is created at kick-off.</string>
+    <string name="config_share_match">Share…</string>
+    <string name="config_match_files_hint">Written from the kick-off and kept up to date after every entry, so there is nothing to remember to export.</string>
+    <string name="config_share_subject">Match log</string>
+    <string name="config_share_failed">Nothing to share yet.</string>
+    <string name="config_teams">Teams</string>
+    <string name="config_teams_count">%1$d names in teams.json</string>
+    <string name="config_teams_import">Import teams…</string>
+    <string name="config_teams_hint">Edit the file on a PC over USB, or import one from anywhere the file picker can reach. Imported names are merged, never replaced.</string>
+    <string name="config_teams_imported">Added %1$d names.</string>
+    <string name="config_teams_import_failed">Could not read that file.</string>
+    <string name="config_keep_recording">Keep recording after final whistle</string>
+    <string name="config_keep_recording_hint">The handshakes are worth filming too. Ending a match starts this countdown; undo calls it off.</string>
+    <string name="config_seconds">%1$d s</string>
+    <string name="config_theme">Theme</string>
+    <string name="config_theme_dark">Midnight (Dark)</string>
+    <string name="config_theme_light">Daylight (Light)</string>
+    <!-- Shorter than link_failed: the reason does not fit a panel line. -->
+    <string name="link_failed_short">Failed — tap Connect to retry</string>
+</resources>
