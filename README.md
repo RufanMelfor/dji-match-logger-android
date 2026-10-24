@@ -91,11 +91,11 @@ operator starts recording a few minutes before kick-off; the app logs
 the match folder next to the footage.
 
 The stitcher can then read the match file to drive a scoreboard overlay, skip
-stoppages and cut goal highlights. The scoreboard comes from Reco itself. The
-cut and skip functions are in the author's own modified build of Reco, not in
-upstream, so with a stock Reco you get the log and the scoreboard, but not the
-automatic cuts. The match file is plain JSON, so any other tool can read it
-too.
+stoppages and cut goal highlights. This is not stock Reco: the scoreboard
+system comes from an [open pull request](https://github.com/reco-project/video-stitcher/pull/474)
+by Bjorn Zelter that is not merged yet, and the author's own build adds
+reading of the match file, the automatic cuts and the goal highlights on top
+of it. The match file is plain JSON, so any other tool can read it too.
 
 ## Features
 
