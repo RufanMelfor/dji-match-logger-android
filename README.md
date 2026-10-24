@@ -110,6 +110,23 @@ The Android emulator has no Bluetooth radio, so anything involving the
 cameras needs a physical device with USB debugging. UI work can be done in
 Compose Previews (`ui/match/MatchPreviews.kt`) and the emulator.
 
+### Tested on
+
+So far the app has been tried on **one device only: a Nokia 7.2 running
+Android 11 (API 30)**, with two DJI Osmo Action 4 cameras. That is an older
+phone, and it sits on the old side of Android's Bluetooth permission change in
+Android 12 (API 31).
+
+- The Android 12+ permission path (`BLUETOOTH_SCAN` / `BLUETOOTH_CONNECT`) is
+  implemented but **has not been tried on a real device**.
+- `minSdk` is 26, but versions other than Android 11 are untested.
+- Other DJI camera models are untested; the protocol notes in
+  [`docs/ble-protocol.md`](docs/ble-protocol.md) are verified on the Osmo
+  Action 4 only.
+
+If you try it on another phone or camera, a report in the issues — working or
+not — is very welcome.
+
 ## Files the app writes
 
 | File | Where | What |
